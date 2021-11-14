@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  font-family: "Special Elite", cursive;
+}
+
+#title {
+  text-align: center;
+  padding-top: 4vh;
+  background-color: red;
+}
