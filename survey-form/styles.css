@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+.container {
+  display: flex-wrap;
+  width: 100%;
+  margin: 0;
+}
+
+#title {
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+#description {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 16px;
+}
+
+#survey-form {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    background-color: blue;
+  }
+}
