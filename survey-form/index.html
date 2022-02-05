@@ -15,23 +15,39 @@
 <body>
   <div class="container">
     <div class="header">
-      <h1 id="title">Survey Form</h1>
+      <h1 id="title">Study Music Preferences </h1>
       <p id="description">Please answer the folllowing questions and submit the form</p>
     </div>
     <form id="survey-form" action="./thanks.html">
       <div class="form-group">
         <label for="name">Name:</label>
-        <input id="name" type="text" required placeholder="Enter your name...">
+        <input id="name-label" name="name" type="text" required placeholder="Enter your name...">
       </div>
       <div class="form-group">
         <label for="name">Email:</label>
-        <input id="email" type="email" required placeholder="Enter your email...">
+        <input id="email-label" name="email" type="email" required placeholder="Enter your email...">
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input id="age-label" type="number" min="10" max="70" placeholder="Age (10)">
+      </div>
+
+      <div class="form-group">
+        <label for="option">Which option describes your musical preferences when you study </label>
+        <select name="preferences" id="preferences">
+          <option disabled selected value>Select ...</option>
+          <option value="lofi">Lo-fi</option>
+          <option value="Nature sounds">Nature sounds</option>
+          <option value="classic-music">Classic music</option>
+          <option value="classic-music">Piano</option>
+          <option value="ambient">Ambient</option>
+          <option value="jazz">Jazz</option>
+        </select>
       </div>
       <div class="buttons-group">
         <button type="reset">Reset</button>
         <button type="submit">Submit</button>
       </div>
-
     </form>
   </div>
 </body>
