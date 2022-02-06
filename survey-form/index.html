@@ -2,38 +2,41 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
   <title>Survey Form</title>
 </head>
 
 <body>
   <div class="container">
     <div class="header">
-      <h1 id="title">Study Music Preferences </h1>
-      <p id="description">Please answer the folllowing questions and submit the form</p>
+      <h1 id="title">Study Music Preferences</h1>
+      <p id="description">
+        Please answer the folllowing questions and submit the form
+      </p>
     </div>
     <form id="survey-form" action="./thanks.html">
       <div class="form-group">
-        <label for="name">Name:</label>
-        <input id="name-label" name="name" type="text" required placeholder="Enter your name...">
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" name="name" type="text" required placeholder="Enter your name..." />
       </div>
       <div class="form-group">
-        <label for="name">Email:</label>
-        <input id="email-label" name="email" type="email" required placeholder="Enter your email...">
+        <label id="email-label" for="name">Email:</label>
+        <input id="email" name="email" type="email" required placeholder="Enter your email..." />
       </div>
       <div class="form-group">
-        <label for="age">Age:</label>
-        <input id="age-label" type="number" min="10" max="70" placeholder="Age (10)">
+        <label id="number-label" for="age">Age:</label>
+        <input id="number" type="number" min="10" max="70" placeholder="Age (10)" />
       </div>
 
       <div class="form-group">
-        <label for="option">Which option describes your musical preferences when you study </label>
+        <label for="option">Which option describes your musical preferences when you study
+        </label>
         <select name="preferences" id="preferences">
           <option disabled selected value>Select ...</option>
           <option value="lofi">Lo-fi</option>
