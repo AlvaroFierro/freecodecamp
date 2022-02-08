@@ -17,7 +17,7 @@
   <body>
     <div class="container">
       <div class="header">
-        <h1 id="title">Study Music Preferences</h1>
+        <h1 id="title">Music preferences studying</h1>
         <p id="description">
           Please answer the folllowing questions and submit the form
         </p>
@@ -54,24 +54,84 @@
             placeholder="Age (10)"
           />
         </div>
+        <div class="form-group">
+          <p>What music do you prefer to listen to?</p>
+          <label
+            ><input type="checkbox" name="prefer" value="electronic" />
+            Electronic</label
+          >
+          <label
+            ><input type="checkbox" name="prefer" value="country" />
+            Country</label
+          >
+          <label
+            ><input type="checkbox" name="prefer" value="funk" /> Funk</label
+          >
+          <label
+            ><input type="checkbox" name="prefer" value="hip-hop" /> Hip
+            hop</label
+          >
+          <label
+            ><input type="checkbox" name="prefer" value="jazz" /> Jazz</label
+          >
+          <label
+            ><input type="checkbox" name="prefer" value="latin" /> Latin</label
+          >
+          <label><input type="checkbox" name="prefer" value="pop" /> Pop</label>
+          <label
+            ><input type="checkbox" name="prefer" value="punk" /> Punk</label
+          >
+          <label
+            ><input type="checkbox" name="prefer" value="reggae" />
+            Reggae</label
+          >
+          <label
+            ><input type="checkbox" name="prefer" value="rock" /> Rock</label
+          >
+          <label
+            ><input type="checkbox" name="prefer" value="metal" /> Metal</label
+          >
+          <label
+            ><input type="checkbox" name="prefer" value="soul" /> Soul</label
+          >
+          <label><input type="checkbox" name="prefer" value="r&b" /> R&B</label>
+          <label
+            ><input type="checkbox" name="prefer" value="others" />
+            Others</label
+          >
+        </div>
 
         <div class="form-group">
-          <label for="option"
-            >Which option describes your musical preferences when you study
-          </label>
-          <select name="preferences" id="preferences">
-            <option disabled selected value>Select ...</option>
-            <option value="lofi">Lo-fi</option>
-            <option value="Nature sounds">Nature sounds</option>
-            <option value="classic-music">Classic music</option>
-            <option value="classic-music">Piano</option>
-            <option value="ambient">Ambient</option>
-            <option value="jazz">Jazz</option>
+          <p>
+            Which option best describes your musical preferences while
+            <strong>studying</strong>?✍
+          </p>
+          <select name="study-preferences" id="dropdown">
+            <option disabled selected>Select ...</option>
+            <option value="lofi">Lo-fi 🎧</option>
+            <option value="Nature sounds">Nature sounds 🌿</option>
+            <option value="classic-music">Classic music 🎻</option>
+            <option value="classic-music">Piano 🎹</option>
+            <option value="ambient">Ambient 🎶</option>
+            <option value="jazz">Jazz 🎺</option>
           </select>
         </div>
+        <div class="form-group">
+          <p>Would you recommend listening to Lo-Fi when you are studying?</p>
+          <label for="radio2"
+            ><input type="radio" name="name" checked value="yes" /> Yes</label
+          >
+          <label for="radio3">
+            <input type="radio" name="name" value="no" /> No</label
+          >
+          <label for="radio1"
+            ><input type="radio" name="name" value="maybe" /> Maybe</label
+          >
+        </div>
+
         <div class="buttons-group">
           <button type="reset">Reset</button>
-          <button type="submit">Submit</button>
+          <button id="submit" type="submit">Submit</button>
         </div>
       </form>
     </div>
