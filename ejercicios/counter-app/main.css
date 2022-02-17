@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu;
+  background: url("./images/scenario.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+h1 {
+  color: #fff;
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+h2 {
+  color: #fff;
+  margin: 20px 0 20px 0;
+  text-align: center;
+  font-size: 60px;
+}

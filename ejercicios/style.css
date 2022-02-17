@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+a,
+.inner span {
+  color: #1d9bf0;
+  cursor: pointer;
+  margin-left: 5px;
+  text-decoration: none;
+}
+a:visited {
+  color: #1d9bf0;
+}
+header {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+}
+
+header .profile-name {
+  display: flex;
+  margin: auto 0;
+  padding-left: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+header .follow-btn {
+  display: flex;
+  margin: 0 0 0 auto;
+  padding: 0.5rem;
+}
+header .follow-btn button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+header button {
+  background-color: #fff;
+}
+
+header button:hover {
+  background-color: #d7dbdc;
+}
+
+.inner p {
+  padding-top: 0.5rem;
+  margin-left: 4rem;
+  max-width: 65vw;
+}
+
+hr {
+  margin-top: 1rem;
+}
+
+footer {
+  display: flex;
+  padding: 1rem;
+}
+
+.stats {
+  display: flex;
+  margin-left: 2rem;
+  padding: 1rem 0.5rem;
+}
+.stats div {
+  max-width: 30vw;
+  padding-left: 0.5rem;
+}
+
+.cta {
+  margin: 0 0 0 auto;
+  padding: 0.5rem;
+}
+
+.cta button {
+  background-color: #fff;
+  margin-left: 15px;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+footer button:hover {
+  background-color: #1d9bf0;
+  color: #fff;
+}
