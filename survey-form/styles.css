@@ -4,6 +4,13 @@
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
 }
+body {
+  background-image: url("./img/music.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
 .container {
   display: flex-wrap;
   width: 100%;
