@@ -1,16 +1,32 @@
-* {
+*,
+*::before,
+*::after {
+  color: #fff;
+  font-weight: 650;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
 }
-body {
-  background-image: url("./img/music.jpg");
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(1, 100, 138, 0.7),
+      rgba(192, 0, 43, 0.8)
+    ),
+    url(./img/music.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
 }
+
 .container {
   display: flex-wrap;
   width: 100%;
@@ -51,6 +67,16 @@ body {
   font-size: 14px;
 }
 
+#reset {
+  background-color: rgb(1, 100, 138);
+  color: #fff;
+}
+
+#submit {
+  background-color: rgb(192, 0, 43);
+  color: #fff;
+}
+
 .form-group p {
   margin-bottom: 15px;
 }
@@ -65,4 +91,5 @@ select,
 input,
 textarea {
   padding-left: 10px;
+  color: #000;
 }
