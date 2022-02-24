@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.box {
+  display: inline-block;
+  max-width: 750px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+p,
+.thanks {
+  text-align: center;
+  padding-top: 2rem;
+}
