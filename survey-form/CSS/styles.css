@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap");
+
 *,
 *::before,
 *::after {
@@ -6,8 +8,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Red Hat Display", sans-serif;
 }
+
 body::after {
   content: "";
   position: fixed;
@@ -60,22 +66,30 @@ body::after {
   padding: 0.5rem;
   border-radius: 8px;
   border: none;
-  background-color: #ffc107;
   margin-bottom: 10px;
   color: #000;
-  font-weight: bolder;
   font-size: 14px;
 }
 
 #reset {
-  background-color: rgb(1, 100, 138);
+  background-color: rgba(1, 100, 138, 1);
   color: #fff;
 }
 
+#reset:hover {
+  cursor: pointer;
+  background-color: rgba(1, 100, 138, 0.8);
+}
+
 #submit {
-  background-color: rgb(192, 0, 43);
   color: #fff;
+  background-color: rgba(192, 0, 43, 1);
   margin-bottom: 15px;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: rgba(192, 0, 43, 0.8);
 }
 
 .form-group p {
