@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/911c0f3b2d.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./styles.css" />
     <title>Landing Page</title>
   </head>
@@ -23,13 +27,31 @@
         </a>
         <div class="navbar__links">
           <ul>
-            <li><a href="#" class="nav-link">Sobre Nosotros</a></li>
-            <li><a href="#" class="nav-link">Servicios</a></li>
-            <li><a href="#" class="nav-link">Contacto</a></li>
+            <li><a href="#about-us" class="nav-link">Sobre Nosotros</a></li>
+            <li><a href="#services" class="nav-link">Servicios</a></li>
+            <li><a href="#contact" class="nav-link">Contacto</a></li>
           </ul>
         </div>
       </nav>
     </header>
+    <section>
+      <div class="container">
+        <div class="section-contact">
+          <i class="fa-solid fa-envelope"></i>
+          <h1 id="contact">Deja tu correo para ser contactado</h1>
+        </div>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Correo electronico"
+            required
+          />
+          <input type="submit" value="Enviar" id="send" />
+        </form>
+      </div>
+    </section>
     <script src="./main.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
