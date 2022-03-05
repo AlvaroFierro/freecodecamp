@@ -98,3 +98,62 @@ body {
     display: flex;
   }
 }
+
+.section-contact {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 1.5rem;
+}
+
+#contact {
+  padding-left: 0.5em;
+}
+
+input {
+  justify-items: center;
+  align-items: center;
+  width: 500px;
+}
+
+form {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="email"] {
+  max-width: 100%;
+  justify-items: center;
+  align-items: center;
+  height: 2.5rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin: 0 auto 0.5em auto;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 650;
+}
+
+#send {
+  max-width: 30%;
+  height: 40px;
+  margin: 0.5rem auto 0 auto;
+  font-size: 1em;
+  font-weight: 900;
+  background: transparent;
+  border: #333 1px solid;
+  cursor: pointer;
+}
+
+.boxes-wrapper {
+  /* display: flex; */
+}
+
+.boxes {
+  width: 200px;
+  height: 200px;
+  background-color: #242526;
+  margin: 5px;
+}
