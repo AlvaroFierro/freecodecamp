@@ -11,6 +11,11 @@ body {
   font-weight: 650;
 }
 
+header {
+  top: 0;
+  position: sticky;
+}
+
 #nav-bar {
   display: flex;
   position: relative;
@@ -122,8 +127,9 @@ form {
   align-items: center;
 }
 
-input[type="email"] {
-  max-width: 100%;
+#name,
+#email {
+  max-width: 80%;
   justify-items: center;
   align-items: center;
   height: 2.5rem;
@@ -136,24 +142,18 @@ input[type="email"] {
   font-weight: 650;
 }
 
-#send {
+#submit {
   max-width: 30%;
   height: 40px;
-  margin: 0.5rem auto 0 auto;
+  margin: 0.5rem auto 1.5rem auto;
   font-size: 1em;
   font-weight: 900;
   background: transparent;
   border: #333 1px solid;
+  border-radius: 5px;
+}
+#submit:hover {
   cursor: pointer;
-}
-
-.boxes-wrapper {
-  /* display: flex; */
-}
-
-.boxes {
-  width: 200px;
-  height: 200px;
-  background-color: #242526;
-  margin: 5px;
+  transition: ease-out 0.3s;
+  box-shadow: inset 150px 0 0 1px #f7941d;
 }
