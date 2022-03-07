@@ -4,16 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: "Red Hat Display", sans-serif;
-  font-weight: 650;
 }
 
 header {
   top: 0;
   position: sticky;
+  font-weight: 650;
 }
 
 #nav-bar {
@@ -73,38 +70,58 @@ header {
   border-radius: 10px;
 }
 
-@media (max-width: 800px) {
-  #nav-bar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .toggle-btn {
-    display: flex;
-  }
-  .navbar__links {
-    display: none;
-    width: 100%;
-  }
-
-  .navbar__links ul {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .navbar__links ul li {
-    text-align: center;
-  }
-
-  .navbar__links ul li a {
-    padding: 0.5rem 1rem;
-  }
-
-  .navbar__links.active {
-    display: flex;
-  }
+.container {
+  width: 100%;
+  display: flex;
+  padding: 2rem;
 }
 
-.section-contact {
+#about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  max-height: 100%;
+  padding: 2rem;
+  margin: 0 0.5rem;
+}
+
+#about-us blockquote {
+  font-size: 1.25rem;
+  font-weight: 550;
+}
+
+#about-us p {
+  margin: 1.5rem 0;
+}
+
+#cta {
+  display: flex;
+  color: #000;
+  max-width: 40%;
+  text-decoration: none;
+  padding: 0.8rem;
+  border-radius: 10px;
+  justify-content: center;
+  border: #333 1px solid;
+}
+
+#cta:hover {
+  transition: ease-out 0.5s;
+  box-shadow: inset 300px 0 0 1px #f7941d;
+}
+.img-description {
+  max-width: 50%;
+  max-height: 100%;
+}
+
+.description-container img {
+  max-width: 100%;
+  max-height: auto;
+  margin: 0 0.5rem;
+}
+
+.contact-section {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -154,6 +171,37 @@ form {
 }
 #submit:hover {
   cursor: pointer;
-  transition: ease-out 0.3s;
+  transition: ease-out 0.5s;
   box-shadow: inset 150px 0 0 1px #f7941d;
+}
+
+@media (max-width: 800px) {
+  #nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .toggle-btn {
+    display: flex;
+  }
+  .navbar__links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar__links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar__links ul li {
+    text-align: center;
+  }
+
+  .navbar__links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar__links.active {
+    display: flex;
+  }
 }
