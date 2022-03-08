@@ -78,12 +78,9 @@ header {
 
 #about-us {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 50%;
-  max-height: 100%;
   padding: 2rem;
-  margin: 0 0.5rem;
+  margin: auto;
 }
 
 #about-us blockquote {
@@ -99,6 +96,8 @@ header {
   display: flex;
   color: #000;
   max-width: 40%;
+  background: transparent;
+  align-items: center;
   text-decoration: none;
   padding: 0.8rem;
   border-radius: 10px;
@@ -111,13 +110,13 @@ header {
   box-shadow: inset 300px 0 0 1px #f7941d;
 }
 .img-description {
-  max-width: 50%;
+  width: 50%;
   max-height: 100%;
 }
 
 .description-container img {
   max-width: 100%;
-  max-height: auto;
+  height: auto;
   margin: 0 0.5rem;
 }
 
@@ -133,8 +132,6 @@ header {
 }
 
 input {
-  justify-items: center;
-  align-items: center;
   width: 500px;
 }
 
@@ -160,7 +157,7 @@ form {
 }
 
 #submit {
-  max-width: 30%;
+  width: 30%;
   height: 40px;
   margin: 0.5rem auto 1.5rem auto;
   font-size: 1em;
@@ -169,13 +166,56 @@ form {
   border: #333 1px solid;
   border-radius: 5px;
 }
+
 #submit:hover {
   cursor: pointer;
   transition: ease-out 0.5s;
   box-shadow: inset 150px 0 0 1px #f7941d;
 }
 
-@media (max-width: 800px) {
+.services-container {
+  width: 100%;
+  height: auto;
+  background-color: rgba(51, 51, 51, 0.85);
+  color: white;
+}
+
+.header-services {
+  align-items: center;
+  justify-content: center;
+
+  display: flex;
+  padding: 1.5rem;
+}
+
+.span-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.span-container span {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+.contact-links,
+.contact-links:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
   #nav-bar {
     flex-direction: column;
     align-items: flex-start;
@@ -203,5 +243,37 @@ form {
 
   .navbar__links.active {
     display: flex;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 2;
+  }
+
+  #about-us {
+    display: grid;
+    width: 100%;
+  }
+  .img-description {
+    width: 100%;
+  }
+
+  .span-container {
+    grid-template-columns: auto auto;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  #about-us a {
+    min-width: 100%;
+  }
+
+  #name,
+  #email {
+    max-width: 70%;
+  }
+
+  #submit {
+    min-width: 70%;
   }
 }
