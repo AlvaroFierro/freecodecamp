@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📃</text></svg>"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Documentation page</title>
   </head>
@@ -15,7 +19,6 @@
         <li><a class="nav-link" href="#Introducción">Introducción</a></li>
         <li><a class="nav-link" href="#Constantes">Constantes</a></li>
         <li><a class="nav-link" href="#Variables">Variables</a></li>
-        <li><a class="nav-link" href="#Tipos_de_datos">Tipos de datos</a></li>
         <li><a class="nav-link" href="#Arrays">Arrays</a></li>
         <li>
           <a class="nav-link" href="#Estructuras_de_control"
@@ -23,12 +26,18 @@
           >
         </li>
         <ul>
-          <li>If</li>
-          <li>Switch</li>
-          <li>For</li>
-          <li>While</li>
-          <li>Do while</li>
-          <li>Foreach</li>
+          <li><a href="#If">Condicionales</a></li>
+          <ul>
+            <li><a href="#If">If</a></li>
+            <li><a href="#If_else">If else</a></li>
+            <li><a href="#Switch">Switch</a></li>
+          </ul>
+          <li><a href="#Bucles">Bucles</a></li>
+          <ul>
+            <li><a href="#For">For</a></li>
+            <li><a href="#While">While</a></li>
+            <li><a href="#Do_while">Do while</a></li>
+          </ul>
         </ul>
         <li><a class="nav-link" href="#Funciones">Funciones</a></li>
         <li><a class="nav-link" href="#Resumen">Resumen</a></li>
@@ -37,7 +46,7 @@
     </nav>
     <main id="main-doc">
       <section class="main-section" id="Inicio">
-        <header>Inicio</header>
+        <header><h2>Inicio</h2></header>
         <article>
           <p>
             Bienvenid@ a este curso donde aprenderas los conceptos básicos de
@@ -45,12 +54,18 @@
             aplicaciones y scripts más complejos y avanzados. Así que si
             consideras que esto es muy básico, lo es para ir avanzando poco a
             poco. Recuerda que la consistencia hará que seas un mejor
-            desarrollador 🙌 por eso te recomiendo que no sigas leyendo otra
-            sección sin haber comprendido lo que se te presenta.
+            desarrollador 🙌 por eso
+            <em
+              >te recomiendo que no sigas leyendo otra sección sin haber
+              comprendido lo que se te presenta.</em
+            >
           </p>
           <p>
             Si tienes alguna duda puedes checar este 👉
-            <a href="https://github.com/AlvaroFierro/Javascript-basico">
+            <a
+              href="https://github.com/AlvaroFierro/Javascript-basico"
+              id="cta-links"
+            >
               repositorio</a
             >
             gratuito que he hecho cubre algunos de los temas que verás a
@@ -59,7 +74,7 @@
         </article>
       </section>
       <section class="main-section" id="Idea_general">
-        <header>Idea general</header>
+        <header><h2>Idea general</h2></header>
         <article>
           <p>
             Este curso está pensado para aquellos que van incursionando en la
@@ -70,14 +85,14 @@
         </article>
       </section>
       <section class="main-section" id="Introducción">
-        <header>Introducción</header>
+        <header><h2>Introducción</h2></header>
         <article>
           <p>
             JavaScript es un lenguage de programación o de secuencias de
             comandos que te permite implementar funciones complejas en las
             páginas web, cada vez que una página web hace algo más que mostrar
             información estática, como actualizaciones de contenido, gráficos
-            2D/3D, repoductores de video, etc., puedes estar muy seguro de que
+            2D/3D, reproductores de video, etc., puedes estar muy seguro de que
             JavaScript se encuentre involucrado.
           </p>
           <p>
@@ -92,53 +107,202 @@
         </article>
       </section>
       <section class="main-section" id="Constantes">
-        <header>Constantes</header>
+        <header><h3>Constantes</h3></header>
         <article>
-          <p></p>
+          <p>
+            Aunque seas muy principiante, pero ya conoces algunos conceptos muy
+            básicos de programación, uno de ellos son las constantes. Que son
+            valores que no cambian con el tiempo, por ejemplo: los números, la
+            gravedad de le Tierra o la velocidad de la luz.
+          </p>
+          <p>
+            En el caso de la programación una constante es un valor que no
+            cambia, en el caso de Javascript no existía este concepto hasta que
+            fué introducido por ES6 (ECMAScript 2015). Lo mismo que una
+            constante de la vida real, los valores no pueden ser cambiados, mira
+            el siguiente código: 👇
+          </p>
         </article>
       </section>
       <section class="main-section" id="Variables">
-        <header>Variables</header>
+        <header><h3>Variables</h3></header>
         <article>
-          <p></p>
-        </article>
-      </section>
-      <section class="main-section" id="Tipos_de_datos">
-        <header>Tipos de datos</header>
-        <article>
-          <p></p>
+          <p>
+            Lo mismo que sucederia en la vida real, es un valor que se pude ser
+            modificado a lo largo del tiempo. Solo que los valores serán
+            almacenados dentro de un espacio determinado para guardar cierta
+            información. Ejemplo: 👇
+          </p>
         </article>
       </section>
       <section class="main-section" id="Arrays">
-        <header>Arrays</header>
+        <header><h3>Arrays</h3></header>
         <article>
-          <p></p>
+          <p>
+            Los <code class="keyword">arrays</code> son un tipo de objeto que te
+            permiten almacenar colecciones de datos de manera ordenada, por
+            ejemplo: strings (cadenas de texto), números, booleanos (true or
+            false), objetos, etc.
+          </p>
+          <p>
+            Tanto la longitud como el tipo de los elementos de un array son
+            variables. Y por ende pueden ser cambiados o mutables con el paso
+            del tiempo.
+          </p>
+          <p>
+            <strong>Nota:</strong> en los arrays, se cuenta desde 0, no desde
+            uno; esto quiere decir que la primer posicion (indice) es 0, la
+            segunda es 1, la tercera es 2, etc.
+          </p>
+          <p>Mira el codigo para entender 👇</p>
+          <p>
+            Para mas información consulta información suplementaria
+            <a
+              href="https://github.com/AlvaroFierro/Javascript-basico/tree/main/01_arrays"
+              target="_blank"
+              id="cta-links"
+              >aquí</a
+            >
+          </p>
         </article>
       </section>
       <section class="main-section" id="Estructuras_de_control">
-        <header>Estructuras de control</header>
+        <header><h3>Estructuras de control</h3></header>
         <article>
-          <p></p>
+          <p>
+            Debes de saber que hay dos tipos de estructuras de control, las que
+            nos permiten condicionar cierta acción y las que nos permiten
+            repetir cierta acción.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Condicionales">
+        <header><h3>Condicionales</h3></header>
+        <article>
+          <p>
+            En el caso de las estructuras de control condicionales nos permiten
+            establecer decisiones donde buscamos que el navegador web realice
+            una accion determinada. Para ello pongamos un ejemplo, si quieres
+            acceder a un tu cuenta de correo, el navegador tiene que: ejecutar
+            una condicion para saber si has iniciado sesión previamente, en el
+            caso que sea así, ejecutará el siguiente paso, abrir tu correo. En
+            caso de no estar autenticado necesitarás ingresar a tu cuenta.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="If">
+        <header><h3>If</h3></header>
+        <article>
+          <p>
+            El <code class="keyword">if</code> es uno de los condicionales mas
+            famosos, debido a que podemos realizar acciones si se cumple la
+            condicion que indicamos. Mira al ejemplo de a continuación 👇
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="If_else">
+        <header><h3>If else</h3></header>
+        <article>
+          <p>
+            En este caso es muy similar a lo que es el
+            <code class="keyword">if</code> ya que este nos permite realizar una
+            accion pero con una diferencia. Este nos permite desencadenar la
+            siguiente condicion es caso de que la primer condición no se cumpla.
+            Mira el ejemplo 👀
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Switch">
+        <header><h3>Switch</h3></header>
+        <article>
+          <p>
+            El <code class="keyword">switch</code> nos permite definir casos
+            especificos a realizar en el caso de que la variable se exponga a
+            cierta condicion. Ejemplo 👇
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Bucles">
+        <header><h3>Bucles</h3></header>
+        <article>
+          <p>
+            Un bucle nos permite automatizar tareas por nosotros, para que no
+            las tengamos que hacer de forma manual, ya que eso puede hacer que
+            gastemos más tiempo del necesario. Además de que nuestra vida más
+            fácil. Por ejemplo si nos dijeran que tenemos que escribir de forma
+            manual los números del 1 al 100 tomaría un rato, pero si lo hacemos
+            con alguno de los siguientes bucles, sería en un abrir y cerrar de
+            ojos 👀
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="For">
+        <header><h3>For</h3></header>
+        <article>
+          <p>
+            El <code class="keyword">for</code> es uno de los bucles más
+            conocidos y que se uitilizan mucho en el ámbito profesional ya que
+            ejecuta el código las veces que nosotros le digamos. Para verlo más
+            a detalle consulta el ejemplo 👇
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="While">
+        <header><h3>While</h3></header>
+        <article>
+          <p>
+            El <code class="keyword">while</code> es un bucle similar al for,
+            pero su diferencia es que repite siempre y cuando una condicion sea
+            verdadera
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Do_while">
+        <header><h3>Do while</h3></header>
+        <article>
+          <p>
+            El <code class="keyword">do while</code> es un bucle similar al
+            <code class="keyword">while</code>pero la diferencia principal es
+            que este primero ejecuta y después comprueba que la condicion se
+            cuumpla. Por lo que se siempre se va a ejecutar una vez antes de que
+            se compruebe la condicion.
+          </p>
         </article>
       </section>
       <section class="main-section" id="Funciones">
-        <header>Funciones</header>
+        <header><h3>Funciones</h3></header>
         <article>
-          <p></p>
+          <p>
+            Una función nos permite hacer "bloques de código" de un programa o
+            de la aplicación que estemos escribiendo. Esto nos va a permitir
+            poder reutilizar ciertas partes de nuestro código y ser más
+            efecientes a la hora de escribir código. Checa el ejemplo para
+            entender a profundidad 👀
+          </p>
         </article>
       </section>
       <section class="main-section" id="Resumen">
-        <header>Resumen</header>
+        <header><h3>Resumen</h3></header>
         <article>
-          <p></p>
+          <p>
+            Hasta aquí has aprendido cosas básicas, elementales que te
+            permitirán llevar tu carrera como desarrollador a otro nivel. Porque
+            si no lo haces más adelante tendrás más problemas.
+          </p>
+          <p>
+            Por eso te reitero que si tienes dudas al finalizar investigues y
+            sobre todo practiques para que el conocimiento se haga más sólido y
+            disperses dudas existentes.
+          </p>
         </article>
       </section>
       <section class="main-section" id="Referencias">
-        <header>Referencias</header>
+        <header><h3>Referencias</h3></header>
         <article>
           <p>
             Aquí puedes leer los sitios donde he basado para una explicación más
-            profunda
+            profunda. También te recomiendo que guardes estos recursos, porque
+            te van a servir más adelante en tu carrera.
           </p>
           <ul>
             <li>
@@ -149,16 +313,22 @@
             </li>
             <li><a href="https://javascript.info/">JavaScript info</a></li>
             <li>
-              <a href="https://fullstackopen.com/en/part1/java_script"
-                >fullstackopen</a
-              >
+              <a href="https://fullstackopen.com/en/part1/java_script">
+                fullstackopen
+              </a>
+            </li>
+            <li>
+              <a href="https://codebox.net/pages/code-syntax-highlighter">
+                Sintaxis
+              </a>
             </li>
           </ul>
         </article>
       </section>
     </main>
-    <footer>Made with [love] from Mexico</footer>
+    <footer>Made with [❤] from Mexico</footer>
   </body>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <!-- <script src="./index.js"></script> -->
+  <script src="https://cdn.free camp.org/testable-projects-fcc/v1/bundle.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
 </html>
