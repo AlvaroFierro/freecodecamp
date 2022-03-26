@@ -1,6 +1,140 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+section header,
+nav,
+article p,
+article li a {
+  padding: 0.5rem 2.5rem;
+}
+
+header {
+  margin-top: 1.5rem;
+}
+.cta-links {
+  color: red;
+}
+
+nav {
+  display: block;
+  position: fixed;
+  float: left;
+  min-width: 290px;
+  width: 25%;
+  height: 100vh;
+  background-color: #2d2d2d;
+  color: #fff;
+  overflow-y: scroll;
+}
+
+nav li {
+  list-style: none;
+  border: 1px solid #fff;
+  margin-top: 1rem;
+}
+
+nav li a {
+  display: block;
+  padding: 1.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-section {
+  display: block;
+  width: 75%;
+  float: right;
+}
+
+.code {
+  display: flex;
+  height: 50px;
+  max-width: 92%;
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+  background-color: #212121;
+}
+pre {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+code {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  overflow: auto;
+  max-width: fit-content;
+}
+
+.keyword {
+  color: #31353d;
+  padding: 1em 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 3px;
+  border: 1px solid #929394;
+  padding: 2px 4px;
+  font-weight: bold;
+}
+#Referencias li {
+  list-style: none;
+  border: 1px solid #fff;
+  margin: 1.5rem 0;
+}
+
+#Referencias a {
+  text-decoration: none;
+}
+
+/* Code snippets styles */
+.comment {
+  color: #777777;
+}
+.keyWord {
+  color: #ff73ef;
+  font-weight: bold;
+}
+.quotedText {
+  color: #a8ff51;
+}
+.value {
+  color: #d4493e;
+  font-weight: bold;
+}
+.number,
+.parenthesis {
+  color: #e9c05e;
+}
+.name {
+  color: #d4493e;
+  font-weight: bold;
+}
+.operators {
+  color: #cecbce;
+}
+.console,
+.case {
+  color: #c6c0e4;
+  font-weight: bold;
+}
+
+.gen {
+  color: #2084dd;
+  font-weight: bold;
+}
+/* End Code snippets styling */
+
+/* =========================
+
+Insert media queries here
+
+============================ */
