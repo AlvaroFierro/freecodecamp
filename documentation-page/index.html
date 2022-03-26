@@ -12,7 +12,7 @@
   </head>
   <body>
     <nav id="navbar">
-      <header>Introducción a JavaScript</header>
+      <header><h2>Introducción a JavaScript</h2></header>
       <ul>
         <li><a class="nav-link" href="#Inicio">Inicio</a></li>
         <li><a class="nav-link" href="#Idea_general">Idea general</a></li>
@@ -26,17 +26,17 @@
           >
         </li>
         <ul>
-          <li><a href="#If">Condicionales</a></li>
+          <li><a class="nav-link" href="#Condicionales">Condicionales</a></li>
           <ul>
-            <li><a href="#If">If</a></li>
-            <li><a href="#If_else">If else</a></li>
-            <li><a href="#Switch">Switch</a></li>
+            <li><a class="nav-link" href="#If">If</a></li>
+            <li><a class="nav-link" href="#If_else">If else</a></li>
+            <li><a class="nav-link" href="#Switch">Switch</a></li>
           </ul>
-          <li><a href="#Bucles">Bucles</a></li>
+          <li><a class="nav-link" href="#Bucles">Bucles</a></li>
           <ul>
-            <li><a href="#For">For</a></li>
-            <li><a href="#While">While</a></li>
-            <li><a href="#Do_while">Do while</a></li>
+            <li><a class="nav-link" href="#For">For</a></li>
+            <li><a class="nav-link" href="#While">While</a></li>
+            <li><a class="nav-link" href="#Do_while">Do while</a></li>
           </ul>
         </ul>
         <li><a class="nav-link" href="#Funciones">Funciones</a></li>
@@ -64,7 +64,7 @@
             Si tienes alguna duda puedes checar este 👉
             <a
               href="https://github.com/AlvaroFierro/Javascript-basico"
-              id="cta-links"
+              class="cta-links"
             >
               repositorio</a
             >
@@ -122,6 +122,13 @@
             constante de la vida real, los valores no pueden ser cambiados, mira
             el siguiente código: 👇
           </p>
+          <div class="code">
+            <code>
+              <pre><span class='keyWord'>const</span> <span class="name">nombre</span><span class="operators"> = </span><span class='quotedText'>&quot;Alvaro&quot;</span><span class='comment'>// La constante es mi nombre, porque no cambia
+</span><span class="console">console</span><span class="operators">.</span><span class="gen">log</span><span class="parenthesis">(</span><span class="name">nombre</span><span class="parenthesis">)</span><span class="operators">;</span>
+</pre>
+            </code>
+          </div>
         </article>
       </section>
       <section class="main-section" id="Variables">
@@ -133,6 +140,12 @@
             almacenados dentro de un espacio determinado para guardar cierta
             información. Ejemplo: 👇
           </p>
+          <div class="code">
+            <code>
+              <pre><span class='keyWord'>var </span><span class="name">edad</span><span class="operators"> = </span><span class="number">23 </span><span class='comment'>// La variable es mi edad, porque cambia
+</span><span class="console">console</span><span class="operators">.</span><span class="gen">log</span><span class="parenthesis">(</span><span class='quotedText'>&quot;Mi edad es:&quot;</span><span class="operators">, </span><span class="name">edad</span><span class="parenthesis">)</span><span class="operators">;</span></pre>
+            </code>
+          </div>
         </article>
       </section>
       <section class="main-section" id="Arrays">
@@ -155,12 +168,19 @@
             segunda es 1, la tercera es 2, etc.
           </p>
           <p>Mira el codigo para entender 👇</p>
+          <div class="code">
+            <code>
+              <pre><span class='keyWord'>let </span><span class="name">hobbies</span><span class="operators"> = </span><span class="gen">[</span><span class='quotedText'>&quot;Videojuegos&quot;</span><span class="operators">, </span><span class='quotedText'>&quot;Series&quot;</span><span class="operators">, </span><span class='quotedText'>&quot;Cine&quot;</span><span class="gen">] </span><span class='comment'>// Mis hobbies conforman el array ya que pueden cambiar
+</span></pre>
+            </code>
+          </div>
+
           <p>
             Para mas información consulta información suplementaria
             <a
               href="https://github.com/AlvaroFierro/Javascript-basico/tree/main/01_arrays"
               target="_blank"
-              id="cta-links"
+              class="cta-links"
               >aquí</a
             >
           </p>
@@ -198,18 +218,38 @@
             famosos, debido a que podemos realizar acciones si se cumple la
             condicion que indicamos. Mira al ejemplo de a continuación 👇
           </p>
+          <div class="code">
+            <code>
+              <pre><span class='comment'>// if (condicion) { proceso }
+</span>
+<span class='keyWord'>if </span><span class="parenthesis">(</span><span class="name">edad </span><span class="operators"> >= </span><span class="number">18</span><span class="parenthesis">) </span><span class="operators">{</span>
+  <span class="gen">alert</span><span class="parenthesis">(</span><span class='quotedText'>&quot;Eres mayor de edad&quot;</span><span class="parenthesis">)</span><span class="operators">;</span>
+<span class="operators">}</span></pre>
+            </code>
+          </div>
         </article>
       </section>
       <section class="main-section" id="If_else">
         <header><h3>If else</h3></header>
         <article>
           <p>
-            En este caso es muy similar a lo que es el
-            <code class="keyword">if</code> ya que este nos permite realizar una
-            accion pero con una diferencia. Este nos permite desencadenar la
-            siguiente condicion es caso de que la primer condición no se cumpla.
-            Mira el ejemplo 👀
+            En este caso el <code class="keyword">if else</code> es muy similar
+            a lo que es el <code class="keyword">if</code> ya que este nos
+            permite realizar una accion pero con una diferencia. Este nos
+            permite desencadenar la siguiente condicion es caso de que la primer
+            condición no se cumpla. Mira el ejemplo 👀
           </p>
+          <div class="code">
+            <code>
+              <pre><span class='comment'>// if (condicion) { proceso } else { proceso }
+</span>
+<span class='keyWord'>if </span><span class="parenthesis">(</span><span class="name">edad </span><span class="operators"> >= </span><span class="number">18</span><span class="parenthesis">) </span><span class="operators">{</span>
+  <span class="gen">alert </span><span class="parenthesis">(</span><span class='quotedText'>&quot;Eres mayor de edad&quot;</span><span class="parenthesis">)</span><span class="operators">;</span>
+<span class="operators">}</span><span class='keyWord'> else </span><span class="operators">}</span>
+  <span class="gen">alert </span><span class="parenthesis">(</span><span class='quotedText'>&quot;Eres menor;de edad&quot;</span><span class="parenthesis">)</span><span class="operators">;</span>
+<span class="operators">}</span></pre>
+            </code>
+          </div>
         </article>
       </section>
       <section class="main-section" id="Switch">
@@ -220,6 +260,35 @@
             especificos a realizar en el caso de que la variable se exponga a
             cierta condicion. Ejemplo 👇
           </p>
+          <div class="code">
+            <code>
+              <pre><span class='comment'>// switch (expresion) { case valor: proceso; break; }
+</span>
+<span class='keyWord'>switch </span><span class="parenthesis">(</span><span class="name">diaSemana</span><span class="parenthesis">)</span> <span class="operators">{</span>
+  <span class='keyWord'>case </span><span class="number">1</span><span class="operators">:</span>
+    <span class='gen'>alert </span><span class="parenthesis">(</span><span class='quotedText'>&quot;Es Lunes&quot;</span><span class="parenthesis">)</span><span class="operators">;
+    <span class='keyWord'>break </span><span class="operators">;</span>
+  <span class='keyWord'>case </span><span class="number">2</span><span class="operators">:</span>
+    <span class='gen'>alert </span><span class="parenthesis">(</span><span class='quotedText'>&quot;Es Martes&quot;</span><span class="parenthesis">)</span><span class="operators">;
+    <span class='keyWord'>break </span><span class="operators">;</span>
+  <span class='keyWord'>case </span><span class="number">3</span><span class="operators">:</span>
+    <span class='gen'>alert </span><span class="parenthesis">(</span><span class='quotedText'>&quot;Es Miércoles&quot;</span><span class="parenthesis">)</span><span class="operators">;
+    <span class='keyWord'>break </span><span class="operators">;</span>
+  <span class='keyWord'>case </span><span class="number">4</span><span class="operators">:</span>
+    <span class='gen'>alert </span><span class="parenthesis">(</span><span class='quotedText'>&quot;Es Jueves&quot;</span><span class="parenthesis">)</span><span class="operators">;
+    <span class='keyWord'>break </span><span class="operators">;</span>
+  <span class='keyWord'>case </span><span class="number">5</span><span class="operators">:</span>
+    <span class='gen'>alert </span><span class="parenthesis">(</span><span class='quotedText'>&quot;Es viernes&quot;</span><span class="parenthesis">)</span><span class="operators">;
+    <span class='keyWord'>break </span><span class="operators">;</span>
+  <span class='keyWord'>case </span><span class="number">6</span><span class="operators">:</span>
+  <span class='keyWord'>case </span><span class="number">7</span><span class="operators">:</span>
+    <span class='gen'>alert </span><span class="parenthesis">(</span><span class='quotedText'>&quot;Es fin de semana&quot;</span><span class="parenthesis">)</span><span class="operators">;
+    <span class='keyWord'>break </span>;
+  <span class='keyWord'>default </span>:
+    <span class='gen'>alert </span><span class="parenthesis">(</span><span class='quotedText'>&quot;Ese día no existe&quot;</span><span class="parenthesis">)</span><span class="operators">;
+}</pre>
+            </code>
+          </div>
         </article>
       </section>
       <section class="main-section" id="Bucles">
@@ -245,16 +314,42 @@
             ejecuta el código las veces que nosotros le digamos. Para verlo más
             a detalle consulta el ejemplo 👇
           </p>
+          <div class="code">
+            <code>
+              <pre><span class='comment'>// for (inicializacion; condicion; incremento) { proceso }
+</span>
+<span class="console">console</span><span class="operators">.</span><span class="gen">log</span><span class="parenthesis">(</span><span class='quotedText'>&quot;Numeros del 1 al 100 con for&quot;</span><span class="parenthesis">)</span><span class="operators">;</span>
+<span class='keyWord'>for</span><span class="parenthesis">(</span><span class="value">let </span><span class="name">i </span><span class="operators"> = </span><span class="number">1</span><span class="operators">;</span><span class="name"> i </span><span class="operators"> >= </span><span class="number">100</span><span class="operators">; </span><span class="name">i</span><span class="operators">++</span><span class="parenthesis">) </span><span class="operators">{</span>
+  <span class="console">console</span><span class="operators">.</span><span class="gen">log</span><span class="parenthesis">(</span><span class="name">i</span><span class="parenthesis">)</span><span class="operators">;</span>
+<span class="operators">}</span></pre>
+            </code>
+          </div>
         </article>
       </section>
       <section class="main-section" id="While">
         <header><h3>While</h3></header>
         <article>
           <p>
-            El <code class="keyword">while</code> es un bucle similar al for,
-            pero su diferencia es que repite siempre y cuando una condicion sea
-            verdadera
+            El <code class="keyword">while</code> es un bucle similar al
+            <code class="keyword">for</code> , pero su diferencia es que repite
+            siempre y cuando una condicion sea verdadera
           </p>
+          <div class="code">
+            <code>
+              <pre><span class='comment'>// while (condición) { proceso }
+</span>
+<span class="console">console</span><span class="operators">.</span><span class="gen">log</span><span class="parenthesis">(</span><span class='quotedText'>&quot;Numeros del 1 al 100 con while &quot;</span><span class="parenthesis">)</span><span class="operators">;</span>
+
+<span class="name">i </span><span class="operators"> =</span> <span class="number">0</span><span class="operators">;</span> <span class='comment'>// Inicializacion del contador
+</span>
+<span class='comment'>// Condición: Mientras la variable contador sea menor de 100
+</span>
+<span class='keyWord'>while </span><span class="parenthesis">(</span><span class="name">i </span><span class="operators"> <= </span><span class="number">100</span><span class="parenthesis">) </span><span class="operators">{</span>
+  <span class="console">console</span><span class="operators">.</span><span class="gen">log</span><span class="parenthesis">(</span><span class="name">i</span><span class="parenthesis">)</span><span class="operators">;</span>
+  <span class="name">i </span><span class="operators"> = </span><span class="name">i </span><span class="operators">+ </span><span class="number">1</span><span class="operators">; </span><span class='comment'> // Incrementamos el valor de i por 1
+</span><span class="operators">}</span></pre>
+            </code>
+          </div>
         </article>
       </section>
       <section class="main-section" id="Do_while">
@@ -262,11 +357,20 @@
         <article>
           <p>
             El <code class="keyword">do while</code> es un bucle similar al
-            <code class="keyword">while</code>pero la diferencia principal es
+            <code class="keyword">while</code> pero la diferencia principal es
             que este primero ejecuta y después comprueba que la condicion se
             cuumpla. Por lo que se siempre se va a ejecutar una vez antes de que
             se compruebe la condicion.
           </p>
+          <div class="code">
+            <code>
+              <pre><span class='comment'>// do while (condicion) { proceso }
+</span>
+<span class='keyWord'>do </span><span class="operators">{</span>
+  <span class="console">console</span><span class="operators">.</span><span class="gen">log</span><span class="parenthesis">(</span><span class='quotedText'>&quot;Do while bucle&quot;</span><span class="parenthesis">)</span><span class="operators"> {</span>
+<span class="operators">} </span><span class='keyWord'>while </span><span class="parenthesis">(</span><span class="number">0</span><span class="operators"> < </span><span class="number">0</span><span class="parenthesis">)</span></pre>
+            </code>
+          </div>
         </article>
       </section>
       <section class="main-section" id="Funciones">
@@ -279,6 +383,19 @@
             efecientes a la hora de escribir código. Checa el ejemplo para
             entender a profundidad 👀
           </p>
+          <div class="code">
+            <code>
+              <pre><span class='comment'>// function nombreFuncion(parametros) { proceso }
+</span>
+<span class='keyWord'>const </span><span class="name">nombre</span><span class="operators"> =</span> <span class='quotedText'>&quot;Alvaro&quot;</span>;<span class="operators">;</span>
+<span class='keyWord'>function </span><span class="gen">nombreFunción</span><span class="parenthesis">( ) </span><span class="operators">{</span>
+  <span class='keyWord'>return </span><span class="console">console</span><span class="operators">.</span><span class="gen">log</span><span class="parenthesis">(</span><span class='quotedText'>&quot;Hola, mi nombre es&quot;</span><span class="operators">,</span> <span class="name">nombre</span><span class="parenthesis">)</span><span class="operators">;</span>
+<span class="operators">}</span>
+
+<span class="gen">nombreFunción</span><span class="parenthesis">(</span><span class="name">nombre</span><span class="parenthesis">)</span><span class="operators">;</span>
+</pre>
+            </code>
+          </div>
         </article>
       </section>
       <section class="main-section" id="Resumen">
@@ -302,7 +419,7 @@
           <p>
             Aquí puedes leer los sitios donde he basado para una explicación más
             profunda. También te recomiendo que guardes estos recursos, porque
-            te van a servir más adelante en tu carrera.
+            te van a servir más adelante en tu carrera. 👇👇👇
           </p>
           <ul>
             <li>
@@ -317,18 +434,14 @@
                 fullstackopen
               </a>
             </li>
-            <li>
-              <a href="https://codebox.net/pages/code-syntax-highlighter">
-                Sintaxis
-              </a>
-            </li>
+            <li><a href="https://lenguajejs.com/">lenguajejs</a></li>
+            <li><a href="https://www.w3schools.com/">w3schools</a></li>
+            <li><a href="https://www.programiz.com/">Programiz</a></li>
           </ul>
         </article>
       </section>
     </main>
-    <footer>Made with [❤] from Mexico</footer>
   </body>
-  <!-- <script src="./index.js"></script> -->
-  <script src="https://cdn.free camp.org/testable-projects-fcc/v1/bundle.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
+  <script src="./index.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
