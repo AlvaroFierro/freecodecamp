@@ -93,6 +93,14 @@ code {
 
 #Referencias a {
   text-decoration: none;
+  margin: 0;
+}
+
+#Referencias ul {
+  display: grid;
+  margin: 0;
+  justify-content: baseline;
+  grid-template-columns: auto auto auto;
 }
 
 /* Code snippets styles */
@@ -133,8 +141,39 @@ code {
 }
 /* End Code snippets styling */
 
-/* =========================
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+  * {
+    font-size: 1.125rem;
+  }
+  nav {
+    display: none;
+  }
+  .main-section {
+    width: fit-content;
+  }
+  .keyword {
+    line-height: 1.5;
+  }
+  .code {
+    display: flex;
+    max-width: 82%;
+    line-height: 1.5;
+    height: auto;
+    background-color: #212121;
+  }
+  #Referencias li {
+    margin: 0.5rem 0;
+  }
 
-Insert media queries here
-
-============================ */
+  #Referencias ul {
+    display: grid;
+    margin: 0;
+    justify-content: baseline;
+    grid-template-columns: auto auto;
+  }
+  #Referencias a {
+    text-decoration: none;
+    margin: 0;
+  }
+}
